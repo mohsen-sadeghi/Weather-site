@@ -62,7 +62,7 @@ const addTodayWeather = (data) => {
   weatherTodayConditionElem.innerHTML = data[0].customDescription.text + data[0].customDescription.emoji;
   weatherMaxTempElem.innerHTML = `${Math.round(data[0].max)}° حداکثر`;
   weatherMinTempElem.innerHTML = `${Math.round(data[0].min)}° حداقل`;
-  weatherTodayImageElem.src = `chrome-extension://ebilacdhmebcihmbjgibcbeaihbecapj/assets/img/lib/weatherStates/${data[0].weather.icon}.svg`
+  weatherTodayImageElem.src = `../image/icon/${data[0].weather.icon}.svg`
 };
 
 const changeThem = (dataWeather)=>{
